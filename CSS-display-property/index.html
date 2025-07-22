@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Properties Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Block Element */
+        .block-element {
+            display: block;
+            width: 100%;
+            border: 2px solid #007bff;
+            padding: 10px;
+            background-color: #cce5ff;
+            margin-bottom: 20px;
+        }
+
+        /* Inline Element */
+        .inline-element {
+            display: inline;
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 5px;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Inline-Block Element */
+        .inline-block-element {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            padding: 10px;
+            border: 2px dashed #28a745;
+            background-color: #d4edda;
+            margin: 10px;
+        }
+
+        /* Hidden Element */
+        .hidden-element {
+            display: none;
+            padding: 10px;
+            background-color: #fff3cd;
+            border: 2px dotted #856404;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 6px 12px;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display Properties Demonstration</h1>
+
+    <div class="section">
+        <div class="label">1. Block Element:</div>
+        <div class="block-element">I am a block element. I take up full width.</div>
+    </div>
+
+    <div class="section">
+        <div class="label">2. Inline Element:</div>
+        <p>This is some text with an <span class="inline-element">inline span</span> inside it.</p>
+    </div>
+
+    <div class="section">
+        <div class="label">3. Inline-Block Element:</div>
+        <div class="inline-block-element">I am inline-block.</div>
+        <div class="inline-block-element">So am I!</div>
+    </div>
+
+    <div class="section">
+        <div class="label">4. Hidden Element (display: none):</div>
+        <button onclick="toggleHidden()">Toggle Hidden Element</button>
+        <div id="hiddenBox" class="hidden-element">
+            You toggled me! I was hidden before.
+        </div>
+    </div>
+
+    <script>
+        function toggleHidden() {
+            const box = document.getElementById("hiddenBox");
+            box.style.display = box.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>
