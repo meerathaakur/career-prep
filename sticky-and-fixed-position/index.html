@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Header & Fixed Footer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            margin-bottom: 60px;
+            /* Space for fixed footer */
+        }
+
+        /* Fixed Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+            z-index: 1000;
+        }
+
+        /* Paragraph Styling */
+        p {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        🌐 Sticky Header — Always visible when scrolling
+    </header>
+
+    <main>
+        <h2>Scroll Down to See the Sticky Header and Fixed Footer in Action</h2>
+        <!-- Generate 10+ paragraphs -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at orci eget libero fermentum aliquam.</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+        <p>Aliquam erat volutpat. Nulla facilisi. Integer ac pretium orci, nec lobortis enim.</p>
+        <p>Mauris vitae leo sed leo rutrum pretium. Pellentesque suscipit ultrices velit.</p>
+        <p>Donec pulvinar risus nec leo convallis lacinia. Duis nec dui nisi.</p>
+        <p>Cras feugiat neque vitae nisl condimentum, ut ornare erat hendrerit.</p>
+        <p>Nam vitae purus quis libero sollicitudin accumsan sed non orci.</p>
+        <p>Curabitur nec ante vel est accumsan convallis. Sed posuere congue massa.</p>
+        <p>Sed sit amet turpis vitae est viverra facilisis eget non nulla.</p>
+        <p>Aenean non justo in nisl laoreet facilisis. Ut id iaculis justo.</p>
+        <p>Quisque rutrum sapien at sollicitudin iaculis. Nullam sed ante vel metus ultrices suscipit.</p>
+    </main>
+
+    <footer>
+        📌 Fixed Footer — Always at the bottom of the screen
+    </footer>
+
+</body>
+
+</html>
